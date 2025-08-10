@@ -1,72 +1,60 @@
-# A statically generated blog example using Next.js, Markdown, and TypeScript
 
-This is the existing [blog-starter](https://github.com/vercel/next.js/tree/canary/examples/blog-starter) plus TypeScript.
+# Blog Alpha
 
-This example showcases Next.js's [Static Generation](https://nextjs.org/docs/app/building-your-application/routing/layouts-and-templates) feature using Markdown files as the data source.
+A modern, statically generated blog built with [Next.js](https://nextjs.org/), [TypeScript](https://www.typescriptlang.org/), [Tailwind CSS](https://tailwindcss.com/), and Markdown.
 
-The blog posts are stored in `/_posts` as Markdown files with front matter support. Adding a new Markdown file in there will create a new blog post.
+**Live Site:** [https://next.henrywithu.com](https://next.henrywithu.com)
 
-To create the blog posts we use [`remark`](https://github.com/remarkjs/remark) and [`remark-html`](https://github.com/remarkjs/remark-html) to convert the Markdown files into an HTML string, and then send it down as a prop to the page. The metadata of every post is handled by [`gray-matter`](https://github.com/jonschlinkert/gray-matter) and also sent in props to the page.
+## Features
 
-## Demo
+- Statically generated with Next.js App Router
+- Write posts in Markdown with front matter
+- Responsive, accessible, and fast
+- Author profiles and cover images
+- Beautiful design with Tailwind CSS
+- Easy content management: just add Markdown files to `/_posts`
 
-[https://next-blog-starter.vercel.app/](https://next-blog-starter.vercel.app/)
+## Getting Started
 
-## Deploy your own
+1. **Install dependencies:**
+	```bash
+	npm install
+	# or
+	yarn install
+	# or
+	pnpm install
+	```
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/blog-starter&project-name=blog-starter&repository-name=blog-starter)
+2. **Run the development server:**
+	```bash
+	npm run dev
+	# or
+	yarn dev
+	# or
+	pnpm dev
+	```
 
-### Related examples
+	Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-- [AgilityCMS](/examples/cms-agilitycms)
-- [Builder.io](/examples/cms-builder-io)
-- [ButterCMS](/examples/cms-buttercms)
-- [Contentful](/examples/cms-contentful)
-- [Cosmic](/examples/cms-cosmic)
-- [DatoCMS](/examples/cms-datocms)
-- [DotCMS](/examples/cms-dotcms)
-- [Drupal](/examples/cms-drupal)
-- [Enterspeed](/examples/cms-enterspeed)
-- [Ghost](/examples/cms-ghost)
-- [GraphCMS](/examples/cms-graphcms)
-- [Kontent.ai](/examples/cms-kontent-ai)
-- [MakeSwift](/examples/cms-makeswift)
-- [Payload](/examples/cms-payload)
-- [Plasmic](/examples/cms-plasmic)
-- [Prepr](/examples/cms-prepr)
-- [Prismic](/examples/cms-prismic)
-- [Sanity](/examples/cms-sanity)
-- [Sitecore XM Cloud](/examples/cms-sitecore-xmcloud)
-- [Sitefinity](/examples/cms-sitefinity)
-- [Storyblok](/examples/cms-storyblok)
-- [TakeShape](/examples/cms-takeshape)
-- [Tina](/examples/cms-tina)
-- [Umbraco](/examples/cms-umbraco)
-- [Umbraco heartcore](/examples/cms-umbraco-heartcore)
-- [Webiny](/examples/cms-webiny)
-- [WordPress](/examples/cms-wordpress)
-- [Blog Starter](/examples/blog-starter)
+3. **Add posts:**
+	- Create Markdown files in the `/_posts` directory. Each file should include front matter for metadata (title, date, author, etc).
 
-## How to use
+## Deployment
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+Deploy your blog instantly with [Vercel](https://vercel.com/). See [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more options.
 
-```bash
-npx create-next-app --example blog-starter blog-starter-app
-```
+## Project Structure
 
-```bash
-yarn create next-app --example blog-starter blog-starter-app
-```
+- `src/` — Application source code
+- `_posts/` — Blog posts in Markdown
+- `public/` — Static assets (images, favicons, etc)
 
-```bash
-pnpm create next-app --example blog-starter blog-starter-app
-```
+## License
 
-Your blog should be up and running on [http://localhost:3000](http://localhost:3000)! If it doesn't work, post on [GitHub discussions](https://github.com/vercel/next.js/discussions).
+This project is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+---
 
-# Notes
+Made with ❤️ by Henry Withu
 
-`blog-starter` uses [Tailwind CSS](https://tailwindcss.com) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3).
+
